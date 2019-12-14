@@ -1,0 +1,213 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	overflow-x: hidden; 
+}
+
+.wrp {
+	display: flex;
+	justify-content: space-between;
+}
+
+.iphone {
+	height: 500px;
+	margin-top: 70px;
+	margin-bottom: 60px;
+	margin-left: 285px;  
+}
+
+.banerProduct {
+	background: #1abc9c;
+}
+
+.footer {
+	background:  #16a085;
+}
+
+.logo {
+	margin-left: 90px; 
+	margin-bottom: 10px;  
+	width: 170px;
+	letter-spacing: -9px;
+}
+
+.logo__letter {
+	font-size: 85px;
+	font-weight: bold;
+}
+
+.logo__symbol {
+	font-size: 65px;
+	font-weight: bold;
+	color: #1abc9c;
+}
+
+.products, .aboutUs, .contactUs {
+	text-decoration: none;  
+	display: inline-block;
+	margin-right: 70px;
+	margin-top: 35px;
+	font-size: 20px;
+	text-transform: uppercase;
+
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__link {
+	text-decoration: none;
+	transition: all 0.4s ease;
+}
+
+.nav__link:hover {
+	color: #16a085;
+	text-decoration: underline;
+	text-decoration-color: underline;
+}
+
+.nav {
+	font-size: 0;
+}
+
+.offer { 
+	margin-right: 50px;
+    margin-top: 140px; 
+	color: #ecf0f1;
+	font-size: 16px
+	line-height: 1.6em;
+}
+
+.offer__info {
+	width: 485px;
+	margin-bottom: 60px; 
+}
+
+.btn {
+	font-size: 25px;
+	display: block;
+	text-decoration: none;
+	color: #ecf0f1;
+	border-color: #ecf0f1;
+	border-width: 2px;
+	border-style: solid; 
+	padding: 10px 20px 10px 20px;
+	width: 155px;
+	border-radius: 5px;
+	text-align: center;
+	transition: all 0.5s ease;
+}
+
+.btn:hover {
+	color: #2980b9;
+	border-color:#2980b9;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: bold;
+	margin-right: 35px; 
+	margin-bottom: 50px; 
+}
+
+.dev {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 70px;
+	padding-bottom: 90px;  
+}
+
+.web__dev, .mobile__dev, .hightload {
+	width: 385px;
+	margin-left: 50px;
+	margin-right: 50px;  
+}
+
+.web__dev i, .mobile__dev i, .hightload i {
+	background-color: #1abc9c;
+	border-radius: 50%;
+	padding: 20px;
+	overflow: hidden;
+	margin-bottom: 16px;   
+}
+
+.web__dev h2, .mobile__dev h2, .hightload h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 16px;  
+}
+
+.footer .title {
+	padding-top: 40px; 
+	text-align: center;
+}
+
+.footer {
+	color: #ecf0f1; 
+}
+
+.field {
+	margin: 0 auto;
+	width: 500px;
+	height: 47px;
+	display: block;
+	margin-bottom: 16px;
+	transition: all 0.2s ease;
+}
+
+.field:hover, .textarea:hover {
+	border-width: 4px;
+	border-color: #2980b9;
+	border-style: solid;   
+}
+
+.textarea {
+	width: 500px;
+	height: 150px;
+	display: block;
+	transition: all 0.2s ease;
+	margin: 0 auto;
+	padding-left: 21px;
+	margin-bottom: 16px;
+}
+
+.radio {
+	display: inline-block;
+	margin: 0 auto;
+	margin-bottom: 16px; 
+	padding-left: 21px;
+}
+
+
+
+.form {
+	padding-bottom: 100px; 
+}
+
+.radio_text {
+	display: inline-block;
+}
+
+.group-radio {
+	margin-left: 455px;
+	margin-bottom: 16px; 
+	padding-left: 21px;
+}
+
+.checkbox {
+	margin-left: 455px;
+	margin-bottom: 16px; 
+	padding-left: 21px;
+}

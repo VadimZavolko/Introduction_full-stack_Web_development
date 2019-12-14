@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Landing Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href=".\css\reset.css">
+	<link rel="stylesheet" href=".\css\style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="menu">
+				
+				<span class="logo">
+					<span class="logo__letter">
+					N
+					</span>
+					<span class="logo__symbol">
+					+ +
+					</span>
+				</span>
+
+				<nav class="nav">
+					<ul class="nav__element">
+						<li class="products">
+							<a href="#" class="nav__link">
+								Products
+							</a>
+						</li>
+						<li class="aboutUs">
+							<a href="#" class="nav__link">
+								About us
+							</a>
+						</li>
+						<li class="contactUs" >
+							<a href="#" class="nav__link">
+								Contact us
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="banerProduct">
+				<div class="wrp">
+					<img src=".\img\IPhone.png" alt="iphone" class="iphone">
+					<div class="offer">
+	                    <h1 class="title">
+	                    	Our awesome app is ready to use
+	                    </h1>
+						<p class="offer__info">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+							vero laboriosam adipisc dolores aut blanditiis necessitatibus inventore, eius fuga porro recusandae sint,quis aliquam nam iure nihil, atque quod!	
+						</p>
+
+						<a href="#reg" class="btn">
+							Buy now!
+						</a>
+					</div>
+				</div>	
+			</div>
+	    </div>
+	</header>
+	
+	<section class="info">
+		<div class="container">
+			<div class="dev">
+				<div class="web__dev">
+					<i class="fa fa-code fa-3x" style="color: #ecf0f1;"></i>
+					<h2>Web development</h2>
+					<p>Indulgence contrasted sufficient to unpleasant in in insensible favourable. Ecstatic elegance gay but disposed. Celebrated delightful an especially increasing instrument am. Whatever throwing we on resolved entrance together graceful. Her too add narrow having wished. Any delicate you how kindness hor</p>
+				</div>
+
+				<div class="mobile__dev">
+					<i class="fa fa-android fa-3x" style="color: #ecf0f1; height: 91px; width: 91px;"></i>
+					<h2>Mobile development</h2>
+					<p>How one dull get busy dare far. Ecstatic elegance gay but disposed. Their saved linen downs tears son add music. Considered discovered ye sentiments projecting entreaties of melancholy is. Girl quit if case mr sing as no have. As mr started arrival subject by believe. An concluded sportsman offending so provision mr educ</p>
+				</div>
+
+				<div class="hightload">
+					<i class="fa fa-cloud fa-3x" style="color: #ecf0f1;"></i>
+					<h2>Hightload</h2>
+					<p>Now summer who day looked our behind moment coming. Whatever throwing we on resolved entrance together graceful. Dissimilar admiration so terminated no in contrasted it. Indulgence contrasted sufficient to unpleasant in in insensible favourable. Indulgence contrasted sufficient to unpleasant in in insensible</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">	
+			<h2 class="title" id="reg">Contact Us</h2>
+			<form action="#" class="form">
+			    <input type="text" placeholder="Name" name="name" 
+			    class="field" required>
+			    <input type="text" placeholder="Last Name" name="lastName" class="field" required> 
+				<input type="email" name="email" class="field" required placeholder="Email">
+			   	<input type="tel" name="tel" class="field" required placeholder="Phone">
+			    <input type="password" name="password" class="field"
+			    placeholder="Password" required>
+				
+				<div class="group-radio">
+				    <label for="male" class="male">	
+						<input type="radio" name="gender" id="male" class="radio">
+						<div class="radio_text">Male</div>
+					</label>
+				    <label for="female" class="female">	
+						<input type="radio" name="gender" id="female" class="radio">
+						<div class="radio_text">Female</div>
+					</label>
+					 <label for="other" class="other">
+						<input type="radio" name="gender" id="other" checked class="radio">
+						<div class="radio_text">Other</div>
+					</label>
+				</div>
+				<input type="month" name="month" placeholder="Month" class="field">
+			    <input type="number" name="number" placeholder="Number" class="field">
+			    <input type="time" name="time" class="field">
+				<input type="date" name="date" class="field">
+
+			    <!--<input type="image" class="field" name="image">-->
+			    <input type="color" class="field" name="color">
+			    <input type="datetime-local" name="datetime-local" class="field" placeholder="datetime-local">
+			    
+			    <input type="file" class="field field-file" name="file">
+			    <input type="hidden" class="field" name="hidden">
+			   
+			    <input type="range" class="field" name="range">
+			    
+			    <input type="search" name="search" class="field" placeholder="Search"> 
+			    <input type="url" class="field" name="url" placeholder="url">
+			    <input type="week" class="field" name="week" placeholder="week"> 
+			   
+				<textarea class="textarea" placeholder="Ask your question"></textarea>
+				
+				<p class="checkbox">Remember me<input type="checkbox" name="checkbox"></p>
+				<input type="button" class="field" name="button">
+				<input type="reset" class="field">
+				<input type="submit" class="field">
+
+			</form>
+		</div>	
+	</footer>
+</body>
+</html>
