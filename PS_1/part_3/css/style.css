@@ -1,29 +1,17 @@
-* {
-	box-sizing: border-box;
-}
 
 .container {
-	width: 100%;
+	width: 960px;
 	margin: 0 auto;
 }
 
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	margin: 0;
 	overflow-x: hidden; 
 }
 
 .wrp {
 	display: flex;
-	justify-content: space-between;
-}
-
-.iphone {
-	height: 500px;
-	margin-top: 70px;
-	margin-bottom: 60px;
-	margin-left: 285px;  
 }
 
 .banerProduct {
@@ -34,32 +22,20 @@ body {
 	background:  #16a085;
 }
 
-.logo {
-	margin-left: 90px; 
-	margin-bottom: 10px;  
+.logo {   
 	width: 170px;
-	letter-spacing: -9px;
+	letter-spacing: -6px;
 }
 
 .logo__letter {
-	font-size: 85px;
+	font-size: 60px;
 	font-weight: bold;
 }
 
 .logo__symbol {
-	font-size: 65px;
+	font-size: 50px;
 	font-weight: bold;
 	color: #1abc9c;
-}
-
-.products, .aboutUs, .contactUs {
-	text-decoration: none;  
-	display: inline-block;
-	margin-right: 70px;
-	margin-top: 35px;
-	font-size: 20px;
-	text-transform: uppercase;
-
 }
 
 .menu {
@@ -67,45 +43,66 @@ body {
 	justify-content: space-between;
 }
 
+.products, .aboutUs, .contactUs {
+	text-decoration: none;  
+	display: inline-block;
+	font-size: 16px;
+	margin-right: 3.5rem;
+	text-transform: uppercase;
+
+}
+
 .nav__link {
 	text-decoration: none;
 	transition: all 0.4s ease;
+	line-height: 5.8em;
 }
 
 .nav__link:hover {
 	color: #16a085;
 	text-decoration: underline;
-	text-decoration-color: underline;
 }
 
 .nav {
 	font-size: 0;
 }
 
+.image {
+	display: flex;
+	flex-direction: space-around;
+	justify-content: center;
+	width: 50%;
+	margin: 5% 0;
+}
+
+.iphone {
+	height: 400px;
+}
+
 .offer { 
-	margin-right: 50px;
-    margin-top: 140px; 
+	width: 50%;
 	color: #ecf0f1;
-	font-size: 16px
-	line-height: 1.6em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 15px;
 }
 
 .offer__info {
-	width: 485px;
-	margin-bottom: 60px; 
+	margin-bottom: 8%; 
 }
 
 .btn {
-	font-size: 25px;
+	font-size: 20px;
 	display: block;
 	text-decoration: none;
 	color: #ecf0f1;
 	border-color: #ecf0f1;
 	border-width: 2px;
 	border-style: solid; 
-	padding: 10px 20px 10px 20px;
+	padding: 0.5em 1em;
 	width: 155px;
-	border-radius: 5px;
+	border-radius: 0.2em;
 	text-align: center;
 	transition: all 0.5s ease;
 }
@@ -116,41 +113,38 @@ body {
 }
 
 .title {
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: bold;
-	margin-right: 35px; 
-	margin-bottom: 50px; 
+	margin-bottom: 5%; 
 }
 
 .dev {
 	display: flex;
-	justify-content: space-between;
-	padding-top: 70px;
-	padding-bottom: 90px;  
+	justify-content: center;
+	text-align: center;
+	padding-top: 7%;
+	padding-bottom: 10%;  
 }
 
 .web__dev, .mobile__dev, .hightload {
-	width: 385px;
-	margin-left: 50px;
-	margin-right: 50px;  
+	width: calc(100%/3); 
 }
 
 .web__dev i, .mobile__dev i, .hightload i {
 	background-color: #1abc9c;
 	border-radius: 50%;
-	padding: 20px;
-	overflow: hidden;
-	margin-bottom: 16px;   
+	padding: 8%;
+	margin-bottom: 5%;   
 }
 
 .web__dev h2, .mobile__dev h2, .hightload h2 {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
-	margin-bottom: 16px;  
+	margin-bottom: 5%;  
 }
 
 .footer .title {
-	padding-top: 40px; 
+	padding-top: 5%; 
 	text-align: center;
 }
 
@@ -158,12 +152,17 @@ body {
 	color: #ecf0f1; 
 }
 
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .field {
-	margin: 0 auto;
 	width: 500px;
 	height: 47px;
 	display: block;
-	margin-bottom: 16px;
+	margin-bottom: 2%;
 	transition: all 0.2s ease;
 }
 
@@ -178,36 +177,35 @@ body {
 	height: 150px;
 	display: block;
 	transition: all 0.2s ease;
-	margin: 0 auto;
-	padding-left: 21px;
-	margin-bottom: 16px;
+	padding-left: 2%;
+	margin-bottom: 2%;
+}
+
+.male, .female, .other {
+	width: 150px;
+}
+
+.wrp-radio {
+	width: 450px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	left: -4.6%;
+	margin-bottom: 2%; 
 }
 
 .radio {
 	display: inline-block;
+	width: 50px;
 	margin: 0 auto;
-	margin-bottom: 16px; 
-	padding-left: 21px;
+	margin-bottom: 2%; 
 }
-
-
 
 .form {
-	padding-bottom: 100px; 
-}
-
-.radio_text {
-	display: inline-block;
-}
-
-.group-radio {
-	margin-left: 455px;
-	margin-bottom: 16px; 
-	padding-left: 21px;
+	padding-bottom: 10%;
 }
 
 .checkbox {
-	margin-left: 455px;
-	margin-bottom: 16px; 
-	padding-left: 21px;
+	width: 500px;
+	margin-bottom: 2%; 
 }
