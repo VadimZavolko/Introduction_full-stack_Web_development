@@ -16,7 +16,7 @@ body {
 
 .header {
 	background-color: #e67e22; 
-	height: 10vh;
+	height: 10%;
 	text-align: center;
 	line-height: 10vh;
 	margin-top: 1em; 
@@ -30,9 +30,7 @@ body {
 }
 
 .main__section1, .main__section2, .main__section3 {
-	height: 85vh;
-	text-align: center;
-	line-height: 85vh;
+	font-size: 16px;
 }
 
 .main__section1 {
@@ -52,7 +50,7 @@ body {
 
 .footer {
 	background-color: #9b59b6;
-	height: 5vh;
+	height: 5%;
 	text-align: center;
 	line-height: 5vh;
 	margin-top: auto;

@@ -159,6 +159,7 @@ body {
 }
 
 .field {
+	padding-left: 1%;
 	width: 500px;
 	height: 47px;
 	display: block;
@@ -177,7 +178,7 @@ body {
 	height: 150px;
 	display: block;
 	transition: all 0.2s ease;
-	padding-left: 2%;
+	padding-left: 1%;
 	margin-bottom: 2%;
 }
 
@@ -208,4 +209,20 @@ body {
 .checkbox {
 	width: 500px;
 	margin-bottom: 2%; 
+}
+
+
+.fa-code, .fa-android, .fa-cloud {
+	color: #ecf0f1;
+}
+
+.fa-android {
+	height: 99px;
+	width: 99px;
+}
+
+.btn-alt {
+	background: #16a085;
+	color: white;
+	width: 15rem;
 }
