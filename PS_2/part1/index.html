@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PS_1 part_1</title>
+</head>
+<body>
+    <div class="main">
+        <div class="conteiner">
+            <!--PART_1-->
+            <section class="sum-number">
+                <div class="wrp">
+                    <div class="wrp-animation">
+                        <h2 class="sum-number__title">Part 1</h2>
+                        <form class="sum-number__form">
+                            <div class="sum-number__wrp">
+                                <label class="sum-number__label">
+                                    Enter the first number:
+                                    <input type="number" name="number-1" class="sum-number__field-1" placeholder="-100">
+                                </label>
+                                <label class="sum-number__label">
+                                    Enter the second number:
+                                    <input type="number" name="number-2" class="sum-number__field-2" placeholder="100">
+                                </label>
+                            </div>
+                            <button type="button" class="sum-number__btn">Send</button>
+                        </form>
+                        <div class="fon">
+                            <h2>The sum of the numbers:</h2>
+                            <div class="content"></div>
+                            <button type="button" class="fon_btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--PART_2-->
+            <section class="translate-time">
+                <div class="wrp">
+                    <div class="wrp-animation">
+                        <h2 class="translate-time__title">Part 2</h2>
+                        <form class="translate-time__form">
+                            <label class="translate-time__label">
+                                Enter the time in seconds or in the<br> format hh:mm:ss:
+                                <input type="text" name="time-format" class="translate-time__field" placeholder="1000s or 01:25:56">
+                            </label>
+                            <button type="button" class="translate-time__btn">Send</button>
+                        </form>
+                        <div class="fon">
+                            <h2>Time:</h2>
+                            <div class="content"></div>
+                            <button type="button" class="fon_btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--PART_3-->
+            <section class="time-interval">
+                <div class="wrp">
+                    <div class="wrp-animation">
+                        <h2 class="time-interval__title">Part 3</h2>
+                        <form class="time-interval__form">
+                            <div class="time-interval__wrp">
+                                <label class="time-interval__label">
+                                    Enter start date:
+                                    <input type="datetime-local" name="datetime-1" class="time-interval__field-1">
+                                </label>
+                                <label class="time-interval__label">            
+                                    Enter end date:
+                                    <input type="datetime-local" name="datetime-2" class="time-interval__field-2">
+                                </label>
+                            </div>
+                            <button type="button" class="time-interval__btn">Send</button>
+                        </form>
+                        <div class="fon">
+                            <h2>Time Interval:</h2>
+                            <div class="content"></div>
+                            <button type="button" class="fon_btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--PART_4-->
+            <section class="chessboard">
+                <div class="wrp">
+                    <div class="wrp-animation">
+                        <h2 class="chessboard__title">Part 4</h2>
+                        <form class="chessboard__form">
+                            <label class="chessboard__label">
+                                Enter checkerboard size:
+                                <input type="text" name="checkerboard-size" class="chessboard__field" placeholder="8x8">
+                            </label>
+                            <button type="button" class="chessboard__btn">Send</button>
+                        </form>
+                        <div class="fon">
+                            <button type="button" class="fon_btn">chessboard</button>
+                            <button type="button" class="fon_btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--PART_5-->
+            <section class="check-ip-link">
+                <div class="wrp">
+                    <div class="wrp-animation">
+                        <h2 class="check-ip-link__title">Part 5</h2>
+                        <form class="check-ip-link__form">
+                            <label class="check-ip-link__label">                   
+                                Enter ip or link:
+                                <textarea name="ip-link" class="check-ip-link__field"></textarea>
+                            </label>
+                            <button type="button" class="check-ip-link__btn">Send</button>
+                        </form>
+                        <div class="fon">
+                            <h2>Correct links:</h2>
+                            <button type="button" class="fon_btn">Show</button>
+                            <button type="button" class="fon_btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--PART_6-->
+            <section class="text-check">
+                <div class="wrp">
+                    <div class="wrp-animation">
+                        <h2 class="text-check__title">Part 6</h2>
+                        <form class="text-check__form">
+                            <label class="text-check__label">
+                                Enter regular or text:
+                                <input type="text" name="regular" class="text-check__field"> 
+                            </label>
+                            <label class="text-check__label">
+                                Enter text:
+                                <textarea name="text" class="text-check__textarea"></textarea>
+                            </label>
+                            <button type="button" class="text-check__btn">Send</button>      
+                        </form>
+                        <div class="fon">
+                            <h2>Correct Text:</h2>
+                            <button type="button" class="fon_btn">Show</button>
+                            <button type="button" class="fon_btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="wrp-answer">
+                <div class="answer"></div>
+            </div>        
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

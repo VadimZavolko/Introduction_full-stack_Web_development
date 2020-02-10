@@ -1,0 +1,210 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+
+h2 {
+    font-size: 18px;
+}
+
+body {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2f3542;
+    color: #f1f2f6;
+    height: 100vh;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+mark {
+    background-color: yellow;
+}
+
+.chessboard__form, .check-ip-link__form, .text-check__form, .time-interval__form, 
+.translate-time__form, .sum-number__form, .time-interval__wrp, .translate-time__label, .sum-number__label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sum-number__label, .sum-number__field-2 {
+    display: block;
+}
+
+.conteiner {
+    position: relative;
+    width:  90%;
+    margin: 0 auto;
+    min-height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 28%);
+    grid-template-rows: repeat(2,  40%);
+}
+
+.wrp, .wrp-animation, .fon{
+    position: relative;
+    width: 20rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #57606f;
+}
+
+.wrp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #1e90ff;
+    transform: rotate(1deg);
+    transform-origin: left bottom;
+    transition: .3s all;
+}
+
+.wrp:hover::before {
+    top: 5px;
+    left: 5px;
+    transform: rotate(2deg);
+    background-color: #2ed573;
+}
+
+.wrp-content {
+    position: absolute;
+}
+
+.wrp-animation {
+    overflow: hidden;
+}
+
+.wrp-animation .fon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: #747d8c;
+    transform: translate(-100%,0); 
+    transition: transform .5s ease-in-out;
+}
+
+.sum-number__btn, .text-check__btn, .check-ip-link__btn, .chessboard__btn, .time-interval__btn, .translate-time__btn, .fon_btn, 
+.answer_btn {
+    margin-top: 1rem;
+    height: 2rem;
+    width: 8rem;
+    border: 0.1rem;
+    border-radius: 0.3rem;
+    background-color: #70a1ff;
+}
+
+.sum-number__btn:hover, .text-check__btn:hover, .check-ip-link__btn:hover, .chessboard__btn:hover, .time-interval__btn:hover,
+.translate-time__btn:hover, .fon_btn:hover, .answer_btn:hover {
+    cursor: pointer;
+    border: 0.3rem;
+    background-color: #1e90ff;
+    transition: .3s ease-in-out;
+}
+
+input {
+    display: block;
+    width: 150px;
+    height: 25px;
+    border: 0;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+textarea {
+    display: block;
+    resize: none;
+    width: 150px;
+    height: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+textarea:focus {
+    width: 200px;
+    height: 100px;
+}
+
+.wrp-answer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(206, 214, 224,0.4);
+    z-index: -1;
+    opacity: 0;
+    margin: auto;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer {
+    background-color: #a4b0be;
+    width: 75%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.answer_btn {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+tr:nth-child(even) th:nth-child(odd), tr:nth-child(odd) th:nth-child(even){
+    background-color: black;
+}
+
+tr:nth-child(odd) th:nth-child(odd), tr:nth-child(even) th:nth-child(even){
+    background-color: white;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse; 
+}
+
+table {
+    width: 80%;
+    height: 80%;
+}
