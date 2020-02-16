@@ -2,14 +2,6 @@ html {
 	box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-}
-
-
-
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
 	margin: 0;
 	padding: 0;
@@ -19,8 +11,6 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
 	vertical-align: baseline;
 	background: transparent;
 }
-
-article, aside, figure, footer, header, nav, section, details, summary {display: block;}
 
 h2 {
     font-size: 18px;
@@ -65,8 +55,8 @@ mark {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(3, 28%);
-    grid-template-rows: repeat(2,  40%);
+    grid-template-columns: repeat(3, calc(80%/3));
+    grid-template-rows: repeat(2, calc(100%/2));
 }
 
 .wrp, .wrp-animation, .fon{
@@ -141,8 +131,9 @@ mark {
 
 input {
     display: block;
-    width: 150px;
+    width: 170px;
     height: 25px;
+    padding-left: 5%;
     border: 0;
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
@@ -199,12 +190,13 @@ tr:nth-child(odd) th:nth-child(odd), tr:nth-child(even) th:nth-child(even){
     background-color: white;
 }
 
-table, th, td {
+table, th {
     border: 1px solid black;
     border-collapse: collapse; 
 }
 
-table {
-    width: 80%;
-    height: 80%;
+.content {
+     text-align: center;
 }
+
+
