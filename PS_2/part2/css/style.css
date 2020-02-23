@@ -1,0 +1,10 @@
+.category:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+  .name:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
