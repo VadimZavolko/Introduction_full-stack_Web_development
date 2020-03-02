@@ -6,9 +6,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	
 </head>
 <body>
-	<header class="header">
+	<header class="header" id="top">
 		<div class="container">
 			<div class="menu">
 				<span class="logo">
@@ -23,17 +24,17 @@
 				<nav class="nav">
 					<ul class="nav__element">
 						<li class="products">
-							<a href="#" class="nav__link">
+							<a href="#baner" class="nav__link">
 								Products
 							</a>
 						</li>
 						<li class="aboutUs">
-							<a href="#" class="nav__link">
+							<a href="#about__Us" class="nav__link">
 								About us
 							</a>
 						</li>
 						<li class="contactUs" >
-							<a href="#" class="nav__link">
+							<a href="#contact__Us" class="nav__link">
 								Contact us
 							</a>
 						</li>
@@ -43,7 +44,7 @@
 	    </div>
 	</header>
 
-	<section class="banerProduct">
+	<section class="banerProduct" id="baner">
 		<div class="container">	
 			<div class="wrp">
 				<div class="image">
@@ -59,14 +60,14 @@
 						vero laboriosam adipisc dolores aut blanditiis necessitatibus inventore, eius fuga porro recusandae sint,quis aliquam nam iure nihil, atque quod!	
 					</p>
 
-					<a href="#reg" class="btn">
+					<a href="#reg" class="btn" id="buy-now">
 						Buy now!
 					</a>
 				</div>	    
 			</div>
 		</div>	
 	</section>
-	<section class="info">
+	<section class="info" id="about__Us">
 		<div class="container">
 			<div class="dev">
 				<div class="web__dev">
@@ -90,7 +91,7 @@
 		</div>
 	</section>
 
-	<footer class="footer">
+	<footer class="footer" id="contact__Us">
 		<div class="container">	
 			<h2 class="title" id="reg">Contact Us</h2>
 			<form action="#" class="form">
@@ -128,7 +129,7 @@
 			    <input type="url" class="field" name="url" placeholder="url">
 			    <input type="week" class="field" name="week" placeholder="week"> 
 				<textarea class="textarea" placeholder="Ask your question"></textarea>
-				<p class="checkbox">Remember me<input type="checkbox" name="checkbox"></p>
+				<label class="checkbox">Remember me<input type="checkbox" name="checkbox"></label>
 				<input type="button" class="field" name="button">
 				<input type="reset" class="field" value="Reset">
 				<input type="submit" class="field" value="Submit">
@@ -137,5 +138,9 @@
 			</form>
 		</div>	
 	</footer>
+	<div class="scroll__top"><div class="btn-top">&#10096</div></div>
+	
+	<script rel="script" src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

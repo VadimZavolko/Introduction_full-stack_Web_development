@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    color: #95a5a6;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 900px;
+    height: 100%;
+    margin:  0 auto;
+    overflow: hidden;
+}
+
+.wrp {
+    margin: 20% auto;
+    width: 15%;
+    min-height: 5%;
+    border-radius: 0.5rem;
+    border: 1px solid #2f3542;
+    transition: border 0.3s linear, width 0.6s linear;
+    cursor: pointer;
+}
+
+.dropdown {
+    background-color: #fff;
+    width: 100%;
+    min-height: 2.3rem; 
+    padding-left: 3%;
+    line-height: 2.2rem;
+    border-radius: 0.5rem;
+    z-index: -1;
+}
+
+.option {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #222f3e;
+    font-size: 18px;
+    z-index: 2;
+    margin-bottom: -0.1%;
+}
+
+.option li { 
+    padding: 2%;
+}
+
+.option li:not(:last-child){
+    border-bottom: 1px solid #95a5a6;
+}
+
+.btn-tr, .btn-active {
+    float: right;
+    padding-right: 3%;
+    color: #222f3e;  
+    font-size: 0.9rem;
+}
+
+.dropdown-active { 
+    border-bottom: 1px solid #95a5a6;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.wrp-hover:hover, .wrp-border {
+    width: 35%;
+    border: 1.8px solid #2980b9;
+}
+
+.option li:hover {
+    color: #c8d6e5;
+    background-color: #2980b9;
+}
+
+.option li:last-child {
+    border-radius: 0 0 .2rem .2rem;
+}
+
+.animateLetter {
+    animation-name: letterAnimate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes letterAnimate {
+    0% {
+        color: #009432;
+    }
+
+    25% {
+        opacity: 0.5;
+        font-size: 1.4rem;
+    }
+
+    50%{
+        opacity: 0.7;
+        font-size: 1.3rem;
+    }
+
+    70% {
+        opacity: 0.8;
+        font-size: 1.1rem;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 1rem;
+    }
+}
