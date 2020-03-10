@@ -50,7 +50,7 @@ const ATM = {
             return false;
         }
 
-        if(amount < 0){
+        if(amount < 0 || amount === undefined){
             this.addLog(`${this.currentUser.type} money entered incorrectly`);
             console.log(`Money entered incorrectly`); 
             return false;
@@ -84,7 +84,7 @@ const ATM = {
             return false;
         }
 
-        if(amount < 0){
+        if(amount < 0 || amount === undefined){
             this.addLog(`${this.currentUser.type} money entered incorrectly`);
             console.log(`Money entered incorrectly`); 
             return false;
@@ -109,7 +109,7 @@ const ATM = {
             return false
         }
 
-        if(amount < 0){
+        if(amount < 0 || amount === undefined){
             this.addLog(`${this.currentUser.type} money entered incorrectly`);
             console.log(`Money entered incorrectly`); 
             return false;
@@ -155,7 +155,7 @@ const ATM = {
     },
 
     addLog(strLog){
-        if(typeof strLog == 'string'){
+        if(typeof strLog === 'string'){
             this.logHistory === undefined ? this.logHistory = [strLog] : this.logHistory.push(strLog);
             return true;
         }
