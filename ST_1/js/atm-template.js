@@ -155,6 +155,10 @@ const ATM = {
     },
 
     addLog(strLog){
-        this.logHistory === undefined ? this.logHistory = [strLog] : this.logHistory.push(strLog);
+        if(typeof strLog == 'string'){
+            this.logHistory === undefined ? this.logHistory = [strLog] : this.logHistory.push(strLog);
+            return true;
+        }
+        return false;
     }
 };
